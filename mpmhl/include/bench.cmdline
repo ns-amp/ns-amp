@@ -1,0 +1,10 @@
+version "0.1"
+package "bench"
+purpose "Benchmarking of MPMHL"
+usage "./bench -m mode -l locks -t threads -i iterations"
+
+# Options
+option "mode" m "Benchmark mode (lock/thread)" string required
+option "lock" l "Number of locks" int required
+option "thread" t "Number of threads" int required
+option "iter" i "Number of iterations" int optional default="100"
